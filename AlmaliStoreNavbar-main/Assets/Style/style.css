@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main {
+  color: #333;
+}
+
+.main__nav1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#logo {
+  width: 257px;
+  cursor: pointer;
+}
+
+.Search__container {
+  display: flex;
+  flex: 1;
+  margin-left: 20px;
+  cursor: pointer;
+
+}
+
+form {
+  display: flex;
+  flex: 1;
+}
+
+#Search__field {
+  border: 1px solid rgb(216, 216, 216);
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+
+}
+
+#Search__button {
+  border: transparent;
+  background-color: red;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 16px;
+  cursor: pointer;
+
+}
+
+#Search__button img {
+  width: 20px;
+  filter: invert(100%);
+  cursor: pointer;
+
+}
+
+.Search__icons {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Search__icons img {
+  width: 20px;
+  border-right: 1px solid #333;
+}
+
+.Search__container__ipad {
+  display: none;
+}
+
+.main__nav2 {
+  display: none;
+}
+
+.Search__container2 {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .main__nav1 {
+    display: none;
+  }
+
+  .nav__top {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  .main__nav2 {
+    display: flex;
+    flex: 1;
+    gap: 210px;
+    max-width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    flex: 1;
+    margin-right: 100px;
+  cursor: pointer;
+
+  }
+
+  #logo {
+    height: 30px;
+    width: 130px;
+  cursor: pointer;
+
+
+  }
+
+  .burger {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: #474747;
+  cursor: pointer;
+
+  }
+
+  #burger_menu {
+    color: #474747;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+  cursor: pointer;
+
+  }
+
+  .Search__container {
+    display: flex;
+  }
+
+  .Search__icons {
+    display: none;
+  }
+
+  .main__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  #logo {
+    width: 130px;
+  }
+
+  .Search__container__ipad {
+    display: flex;
+    flex: 1;
+    margin-left: 20px;
+  }
+
+  .Search__container__ipad form {
+    display: flex;
+    flex: 1;
+  }
+
+  .Search__container2 {
+    display: flex;
+    background-color: red;
+    border: 0.5px solid rgba(240, 239, 239, 0.616);
+    position: relative;
+    top: 5px;
+    padding: 3px;
+  }
+
+  #Search__field2 {
+    border: none;
+    background-color: red;
+    width: 100%;
+    outline: none;
+  }
+
+  #Search__button2 {
+    border: transparent;
+    background-color: red;
+    width: -moz-max-content;
+    width: 20px;
+  }
+
+  #Search__button2 img {
+    width: 20px;
+    filter: invert(100%);
+  }
+
+  ::placeholder {
+    color: rgb(240, 239, 239);
+    opacity: 1;
+    font-size: 10px;
+    font-weight: 100;
+  }
+  .search__background {
+    background-color: red;
+    height: 40px;
+  }
+  .main__nav2__menu{
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+    background-color: white;
+    flex-direction: column;
+    justify-content: start;
+    left: -40%;
+    transition: 300ms all;
+    
+  }
+  .main__nav2__menu a{
+    font-size: 11px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+  }
+  .sellection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border: 1px solid rgb(241, 241, 240);
+  }
+  .fa-chevron-right{
+    font-size: 10px;
+  }
+}
